@@ -7,12 +7,12 @@
   </li>
 </ul>
 
-# CSS Grid Layout
+# Grid Layout
 <ul>
   <li>Have used grid layout for creating the layout of the webpage and also have used inside footer to create its layout.</li>
 </ul>
 
-# CSS Flex Box
+# Flex Box Layout
 <ul>
   <li>Have used flex box for aligning cards in a row and making sure there are only 3 cards in a row, and have used flex for aligning the content inside the nav bar.</li>
 </ul>
@@ -93,6 +93,13 @@
 # @import
 <ul>
   <li>
-    Have used @import directive in SCSS to include the content from other SCSS files into your main SCSS file.
+    Have used @import directive in SCSS to include the content from other SCSS files into my main SCSS file.
+  </li>
+</ul>
+
+# Parent Selector
+<ul>
+  <li>
+    Have used parent selecctor in nested selectors to refer to the outer selector. For example have used it inside the buttton class selector so that unique styles will be applied on hover.
   </li>
 </ul>
