@@ -1,0 +1,51 @@
+@use "sass:math";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+
+
+$font-stack: "Poppins";
+$light-color: #f4f4f4;
+$primary-color:  #5f6fff;
+$secondary-color: #fc7460;
+$accent-color: #12486b;
+$lightened-color: lighten-bg($primary-color, 20%);
+
+:root{
+    --darkColor: #000;
+    --lightColor: #fff;
+}
+
+@mixin set-background-color($color) {
+  background-color: $color;
+}
+
+@mixin font-family($family) {
+  font-family: $family;
+}
+
+@mixin background-image($image, $size: cover, $repeat: no-repeat) {
+    background-image: url('#{$image}');
+    background-size: $size;
+    background-repeat: $repeat;
+  }
+
+@function lighten-bg($color, $percentage) {
+  @return lighten($color, $percentage);
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return var(--darkColor);
+  } @else {
+    @return  var(--lightColor);
+  }
+}
+
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + rem;
+  } @else {
+    @error 'Dont use units when using the rem() function, only numbers.';
+  }
+}

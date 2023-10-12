@@ -1,0 +1,143 @@
+@import "config";
+@import "buttons";
+@import "nav-bar";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  // padding: 0 20px; 
+  flex-wrap: wrap;
+  margin-left: 60px;
+  margin-right: 60px;
+
+  .card {
+    flex: 0 0 calc(30.33% - 20px); 
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 10px; 
+    
+    .userratings {
+      display: flex; 
+      align-items: center; 
+
+      .fa {
+        &.checked {
+          margin-right: 5px;
+          color: orange;
+        }
+      }
+
+      p{
+        margin-left: 15px;
+      }
+    }
+
+    &-image {
+      img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+
+    &-title {
+      text-align: center;
+    }
+
+    &-dets {
+      margin-top: 10px;
+
+      h4 {
+        color: set-text-color(white);
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 14px;
+        color: set-text-color(white);
+      }
+    }
+  }
+}
+
+.intro{
+  text-align: center;
+  line-height: 1.6;
+  @include font-family("Montserrat");
+  h1{
+    color: $accent-color;
+    border-bottom: 3px solid $secondary-color;
+    display: inline-block;
+  }
+  color: set-text-color(white);
+
+}
+
+.review-card {
+  display: flex;
+  width: 33%;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  flex: 1;
+}
+
+.profile-pic img {
+  width: 70%;
+  height: 80px; 
+  border-radius: 50%;
+}
+
+.review-text {
+  flex: 2;
+  padding: 10px;
+}
+
+.review-text p {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+.reviews{
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: set-text-color(white);
+  width:100%; 
+  height: 400px; 
+  @include background-image('../images/boston.jpg', contain, no-repeat);
+  background-size:100%;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.centered {
+  position: absolute;
+  font-size: 50px;
+  @include font-family("Montserrat");
+  color: black;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@import "mobile";

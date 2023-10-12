@@ -1,0 +1,24 @@
+%btn{
+    display: inline-block;
+    border-radius: 15px;
+    padding: 0px 20px;
+    margin: 3px;
+    height: 45px;
+    border: none;
+    color: whitesmoke;
+    @include font-family("Poppins");
+    cursor: pointer;
+    font-size: 15px;
+    &:hover{
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+}
+
+.btn-primary{
+    @extend %btn;
+    background-color:  $secondary-color;
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+        color: white;
+      }
+ }

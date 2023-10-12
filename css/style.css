@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+}
+
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+}
+
+.header {
+  background-color: #5f6fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center;
+  position: sticky;
+  color: var(--darkColor);
+  position: -webkit-sticky;
+  top: 0; /* required */
+  border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.right-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.right-nav ul li {
+  padding: 15px;
+  align-items: center;
+  font-family: "Poppins";
+}
+.right-nav a {
+  text-decoration: none;
+  color: var(--darkColor);
+}
+
+.left-nav .title h1 {
+  font-size: 24px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Lucida Sans";
+}
+
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+}
+
+.btn-primary {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 0px 20px;
+  margin: 3px;
+  height: 45px;
+  border: none;
+  color: whitesmoke;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn-primary:hover {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #fc7460;
+}
+.btn-primary:hover {
+  background-color: #fb482e;
+  color: white;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  background-color: #5f6fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.footer .title {
+  font-size: 1.125rem;
+  font-family: "Lucida Sans";
+  text-transform: uppercase;
+  color: var(--lightColor);
+  letter-spacing: 2px;
+}
+.footer p {
+  color: var(--lightColor);
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-family: "Poppins";
+}
+.footer svg {
+  font-size: 1.875rem;
+  margin-right: 10px;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+}
+.footer form {
+  grid-column: span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer input {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 0px 20px;
+  margin: 3px;
+  height: 45px;
+  border: none;
+  color: whitesmoke;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn-primary:hover {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #fc7460;
+}
+.btn-primary:hover {
+  background-color: #fb482e;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 680px 320px 350px 800px auto;
+  min-height: 100vh;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5f6fff;
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+  color: white;
+}
+.content h4 {
+  margin-bottom: 10px;
+  font-size: 2.1875rem;
+}
+.content p {
+  line-height: 2;
+  font-size: 1.125rem;
+  margin-top: 30px;
+}
+.content button {
+  margin-top: 30px;
+}
+
+.heading {
+  font-family: "Montserrat";
+  color: #12486b;
+  border-bottom: 6px solid #12486b;
+  padding: 0px;
+  font-size: 0.9375rem;
+  margin: 0px;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section-2 .cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-2 .cards .card {
+  flex: 1;
+  flex: 0 0 calc(25% - 20px);
+  border-left: 2px solid #fc7460;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #12486b;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  background: white;
+}
+.section-2 .cards .card-image {
+  margin-top: 20px;
+  font-size: 4.6875rem;
+}
+.section-2 .cards .card-dets {
+  margin-top: 20px;
+  font-size: 1.25rem;
+}
+.section-2 .cards .card:hover {
+  border: 1px solid #fc7460;
+  transform: translateY(-5px);
+  background: #fc7460;
+  color: white;
+}
+
+.section-3 {
+  font-family: "Montserrat";
+  text-transform: capitalize;
+}
+
+.card {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.title-1 {
+  width: 10%;
+  font-size: 1.25rem;
+}
+
+.heading-1 {
+  color: #5f6fff;
+  font-size: 1.4375rem;
+}
+
+.dets {
+  width: 90%;
+  font-size: 0.9375rem;
+  margin-left: 50px;
+}
+
+.when,
+.where,
+.contact,
+.price {
+  display: flex;
+  margin-top: 15px;
+  border-bottom: 1px dashed #000;
+}
+
+.main {
+  padding: 20px;
+}
+
+.footer {
+  color: #12486b;
+  text-align: center;
+  border-top: 3px solid grey;
+  font-size: 1.5625rem;
+}
+
+.section-4 {
+  font-family: "Montserrat";
+}
+.section-4 .card {
+  display: inline-block;
+  width: 30%;
+  box-sizing: border-box;
+}
+.section-4 .card-image img {
+  width: 100%;
+  height: 250px;
+}
+.section-4 .card-dets {
+  text-align: center;
+}
+.section-4 .card-dets h4 {
+  color: #5f6fff;
+  font-size: 1.125rem;
+  margin: 10px 0;
+}
+.section-4 .card-dets p {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout {
+    grid-template-rows: auto;
+  }
+  .section-1 img {
+    display: none;
+  }
+  .header, .section-1 {
+    background-color: #c5cbff;
+    color: #12486b;
+  }
+  .content h4 {
+    font-size: 32px;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .content {
+    color: #12486b;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 90% !important;
+  }
+  .footer {
+    font-size: 18px;
+  }
+  .review-card {
+    width: 100%;
+  }
+  .reviews {
+    display: block;
+  }
+  .footer {
+    background-color: #c5cbff;
+    display: block;
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .layout {
+    grid-template-rows: auto;
+  }
+  .section-1 {
+    background-color: white;
+  }
+  .section-1 .content {
+    color: black;
+  }
+  .section-1 img {
+    display: none;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .section-2 .card {
+    width: 33.33%;
+    height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */

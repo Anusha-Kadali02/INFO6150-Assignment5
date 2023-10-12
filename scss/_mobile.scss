@@ -1,0 +1,80 @@
+@import "config";
+
+
+
+@media only screen and (max-width: 600px){
+  .layout {
+      grid-template-rows: auto;
+    }
+    .section-1 img{
+      display: none;
+    }
+    .header,.section-1{
+      background-color: $lightened-color;
+      color: $accent-color;
+    }
+
+    .content h4{
+      font-size: 32px;
+    }
+
+    .heading{
+      margin-top: 20px;
+      font-size: 12px;
+    }
+    .content{
+      color: $accent-color;
+    }
+
+    .cards{
+      flex-direction: column;
+    }
+
+    .card{
+      width:90% !important;
+    }
+
+    .footer{
+      font-size: 18px;
+    }
+
+    .review-card{
+      width:100%;
+    }
+
+    .reviews{
+      display: block;
+    }
+
+    .footer{
+      background-color: $lightened-color;
+      display: block;
+      padding-left: 40px
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .layout{
+    grid-template-rows: auto;
+  }
+  .section-1{
+    background-color: white;
+    .content{
+      color: black
+    }
+    img{
+      display: none;
+    }
+  }
+  .heading{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .section-2{
+    .card{
+      width: 33.33%;
+      height: 250px;
+    }
+  }
+}

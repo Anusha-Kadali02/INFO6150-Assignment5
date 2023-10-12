@@ -1,0 +1,56 @@
+@import "config";
+@import "buttons";
+
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 60px 0;
+  text-align: center;
+
+  .title {
+    font-size: rem(18);
+    @include font-family("Lucida Sans");
+    text-transform: uppercase;
+    color: set-text-color(black);
+    letter-spacing: 2px;
+  }
+
+  p {
+    color: set-text-color(black);
+    margin-bottom: 10px;
+    font-size: rem(20);
+    @include font-family("Poppins");
+  }
+
+  svg {
+    font-size: rem(30);
+    margin-right: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: rem(20);
+  }
+
+  form {
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+}

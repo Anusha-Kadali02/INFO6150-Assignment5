@@ -1,0 +1,44 @@
+@import "config";
+
+.header {
+    @include set-background-color($primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+    position: sticky;
+    color: set-text-color($primary-color);
+    position: -webkit-sticky;
+    top: 0; /* required */
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .right-nav {
+    ul {
+      display: flex;
+      list-style-type: none;
+      li {
+        padding: 15px;
+        align-items: center;
+        @include font-family("Poppins");
+      }
+    }
+    a{
+        text-decoration: none;
+        color: set-text-color($primary-color);
+    }
+  }
+  
+  .left-nav {
+    .title {
+      h1 {
+        font-size: 24px;
+        font-family: "Poppins";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @include font-family("Lucida Sans");
+      }
+    }
+  }
+

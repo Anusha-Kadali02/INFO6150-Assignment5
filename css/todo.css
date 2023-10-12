@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Titan+One&display=swap");
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+}
+
+.btn-primary {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 0px 20px;
+  margin: 3px;
+  height: 45px;
+  border: none;
+  color: whitesmoke;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn-primary:hover {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #fc7460;
+}
+.btn-primary:hover {
+  background-color: #fb482e;
+  color: white;
+}
+
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+}
+
+.header {
+  background-color: #5f6fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center;
+  position: sticky;
+  color: var(--darkColor);
+  position: -webkit-sticky;
+  top: 0; /* required */
+  border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.right-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.right-nav ul li {
+  padding: 15px;
+  align-items: center;
+  font-family: "Poppins";
+}
+.right-nav a {
+  text-decoration: none;
+  color: var(--darkColor);
+}
+
+.left-nav .title h1 {
+  font-size: 24px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Lucida Sans";
+}
+
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+}
+
+.btn-primary {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 0px 20px;
+  margin: 3px;
+  height: 45px;
+  border: none;
+  color: whitesmoke;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn-primary:hover {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #fc7460;
+}
+.btn-primary:hover {
+  background-color: #fb482e;
+  color: white;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  background-color: #5f6fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.footer .title {
+  font-size: 1.125rem;
+  font-family: "Lucida Sans";
+  text-transform: uppercase;
+  color: var(--lightColor);
+  letter-spacing: 2px;
+}
+.footer p {
+  color: var(--lightColor);
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-family: "Poppins";
+}
+.footer svg {
+  font-size: 1.875rem;
+  margin-right: 10px;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+}
+.footer form {
+  grid-column: span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer input {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.cards .card {
+  flex: 0 0 calc(30.33% - 20px);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 10px;
+}
+.cards .card .userratings {
+  display: flex;
+  align-items: center;
+}
+.cards .card .userratings .fa.checked {
+  margin-right: 5px;
+  color: orange;
+}
+.cards .card .userratings p {
+  margin-left: 15px;
+}
+.cards .card-image img {
+  width: 100%;
+  height: 250px;
+}
+.cards .card-title {
+  text-align: center;
+}
+.cards .card-dets {
+  margin-top: 10px;
+}
+.cards .card-dets h4 {
+  color: var(--darkColor);
+  font-size: 18px;
+  margin: 10px 0;
+}
+.cards .card-dets p {
+  font-size: 14px;
+  color: var(--darkColor);
+}
+
+.intro {
+  text-align: center;
+  line-height: 1.6;
+  font-family: "Montserrat";
+  color: var(--darkColor);
+}
+.intro h1 {
+  color: #12486b;
+  border-bottom: 3px solid #fc7460;
+  display: inline-block;
+}
+
+.review-card {
+  display: flex;
+  width: 33%;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  flex: 1;
+}
+
+.profile-pic img {
+  width: 70%;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.review-text {
+  flex: 2;
+  padding: 10px;
+}
+
+.review-text p {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: var(--darkColor);
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/boston.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.centered {
+  position: absolute;
+  font-size: 50px;
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout {
+    grid-template-rows: auto;
+  }
+  .section-1 img {
+    display: none;
+  }
+  .header, .section-1 {
+    background-color: #c5cbff;
+    color: #12486b;
+  }
+  .content h4 {
+    font-size: 32px;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .content {
+    color: #12486b;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 90% !important;
+  }
+  .footer {
+    font-size: 18px;
+  }
+  .review-card {
+    width: 100%;
+  }
+  .reviews {
+    display: block;
+  }
+  .footer {
+    background-color: #c5cbff;
+    display: block;
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .layout {
+    grid-template-rows: auto;
+  }
+  .section-1 {
+    background-color: white;
+  }
+  .section-1 .content {
+    color: black;
+  }
+  .section-1 img {
+    display: none;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .section-2 .card {
+    width: 33.33%;
+    height: 250px;
+  }
+}/*# sourceMappingURL=todo.css.map */
